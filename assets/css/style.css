@@ -3,12 +3,12 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
     font-family: sans-serif;
-    /* font-size: 1rem; */
+    font-size: 14px;
 }
 
 
@@ -31,30 +31,12 @@
     justify-content: center;
     align-items: center;
     user-select: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .signup h2 {
     font-size: 1.5rem;
-    /* border-bottom: 1px solid rgb(83, 81, 81); */
-}
-
-
-.signup > p {
- 
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    
-}
-
-
-
-
-
-.signup * {
-    padding-bottom: 5px;
+    border: none;
 }
 
 
@@ -64,27 +46,29 @@
 
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(253, 251, 251);
     background: none;
-    /* box-shadow: 0px 1px 1px; */
-    /* margin-top: 20px; */
     color: white;
-    width: 45%;
-    padding-bottom: 5px;
+    width: 100%;
     
+}
+.signup span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    /* visibility: hidden; */
 }
 
 ::placeholder {
     color: rgb(255, 255, 255, 0.5);
 }
 
+
+
 .signup select {
 
     color: white;
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(255, 253, 253);
-    width: 45%;
+    width: 100%;
    
    
 }
@@ -97,10 +81,14 @@
 
 .general {
 
-    background-color: rgba(50, 169, 216, 1);
+    background: rgba(0, 0, 0, 1);
     height: 600px;
     width: 500px;
     padding: 30px;
+    display: grid;
+    justify-content: space-between;
+    align-content: flex-start;
+    grid-template-columns: 45% 45%;
 }
 
 
@@ -110,27 +98,107 @@
 
 
 .general select {
-    background: rgba(50, 169, 216, 1);
+    background: rgba(0, 0, 0, 1);
    
+}
+
+.general > * {
+    border-bottom: 1px solid rgb(253, 251, 251);
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+
+#generalTitle {
+    grid-column: 1 / span 2;
+   
+}
+
+#title  {
+    grid-column: 1 / span 2;
+}
+
+#position {
+    grid-column: 1 / span 2;
+}
+
+#company {
+    grid-column: 1 / span 2;
 }
 
 
 
 
-
-
-
-.contact {
+.contact{
     background-color: rgba(3, 12, 146, 1);
     height: 600px;
     width: 500px;
     padding: 30px;
+    display: grid;
+    justify-content: space-between;
+    align-content: flex-start;
+    grid-template-columns: 45% 45%;
 }
 
 .contact select {
     background-color: rgba(3, 12, 146, 1);
    
 }
+
+.contact > * {
+    border-bottom: 1px solid rgb(253, 251, 251);
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+
+#contactTitle {
+    grid-column: 1 / span 2;
+}
+#streetN {
+    grid-column: 1 / span 2;
+}
+
+#addInf {
+    grid-column: 1 / span 2;
+}
+
+#country {
+    grid-column: 1 / span 2;
+}
+
+#email {
+    grid-column: 1 / span 2;
+}
+
+#agree {
+    grid-column: 1 / span 2;
+    border: none;
+}
+#agree input {
+    width: auto;
+}
+#agree a {
+    color: rgba(163, 231, 187, 1);
+}
+
+#button {
+    grid-column: 1 / span 2;
+    text-align: end;
+    border: none;
+}
+#button button {
+
+    padding: 5px;
+    border: none;
+    background-color: rgba(8, 0, 0, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+
 
 
 

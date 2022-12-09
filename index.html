@@ -14,54 +14,68 @@
 
     <div class="container">
 
-        <div class="signup">
+        <div id="signup" class="signup">
             <div class="general">
-                <h2>General Information</h2>
-                <p>
-                   
-                    <select name="title" id="title">
-                        <option value="mr" selected disabled>      Title</option>
+                <h2 id="generalTitle">General Information</h2>
+            
+                   <div id="title" class="block">
+                    <span>Title</span><br>
+                    <select name="title" id="">
+                        <option value="mr" selected disabled>  Title</option>
                         <option value="mr">Mr</option>
                         <option value="miss">Miss</option>
                     </select>
+                   </div>
+                    
 
-                </p>
+                   <div id="name" class="block">
+                    <span>Name</span><br>
+                    <input  type="text" placeholder="Name">
+                   </div>
 
-                <p>
+                   
+                   <div id="surname" class="block">
+                    <span>Surname</span><br>
+                    <input  type="text" placeholder="Surname">
+                   </div>
+                             
 
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Surname">
-
-
-                </p>
-
-                <p>
+                   <div id="position" class="block">
+                    <span>Position</span><br>
+                    <select name="position" id="">
+                        <option value="option1" selected disabled>position</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                        <option value="option4">option4</option>
+                        </select>
+                   </div>
                 
-                    <select name="position" id="position">
-                    <option value="option1" selected disabled>position</option>
-                    <option value="option2">option2</option>
-                    <option value="option3">option3</option>
-                    <option value="option4">option4</option>
-                    </select>
-                </p>
-
-                <p>
+                              
+                   <div id="company" class="block">
+                    <span>Company</span><br>
                     <input type="text" placeholder="Company">
-                </p>
-
-                <p>
-
+                   </div>
+             
+                   
+                   <div id="businesArena" class="block">
+                    <span>Business Arena</span><br>
                     <input type="text" placeholder="Busines Arena">
-                    <select name="Employees" id="employees" >
+                   </div>
 
-                            <option value="option1" selected disabled>Employees</option>
-                            <option value="option2">option2</option>
-                            <option value="option3">option3</option>
-                            <option value="option4">option4</option>
-                          
-                    </select>
+             
+                   <div id="employees" class="block">
+                    <span>Employees</span><br>
+                    <select name="Employees" id="" >
+                        <option value="option1" selected disabled>Employees</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                        <option value="option4">option4</option>                   
+                </select>
+                   </div>
+                    
+                    
 
-                </p>
+              
               
 
 
@@ -70,24 +84,29 @@
 
 
             <div class="contact">
-                <h2>Contact Information</h2>
+                <h2 id="contactTitle">Contact Information</h2>
 
-                <p>           
+                         
+                   <div id="streetN">
                     <span>Street + N</span><br>
                     <input type="text" placeholder="Street + N">
-                </p>
+                   </div>
+                
 
-                <p>
+               
+                   <div id="addInf">
                     <span>Additional Information</span><br>
                     <input type="text" placeholder="Additional Information">
-                </p>
+                   </div>
+                
 
-                <p>
-                    <div>
+               
+                    <div id="zipCode">
                         <span>Zip Code</span><br>
                         <input type="text" placeholder="Zip Code">
                     </div>
-                    <div>
+
+                    <div id="place">
                         <span>Place</span><br>
                     
                         <select name="place" id="place">
@@ -99,41 +118,48 @@
                         </select>
                     </div>
                   
-                </p>
+               
 
-                <p>
+              
+                 <div id="country">
                     <span>Country</span><br>
                     <input type="text" placeholder="Country">
-                </p>
+                 </div>
+            
 
-                <p>
-                    <div>
+              
+                    <div id="code">
                         <span>Code</span><br>
                         <input type="text" placeholder="Code">
                     </div>
-                    <div>
+
+                    <div id="phone">
                         <span>Phone Number</span><br>
                         <input type="text" placeholder="Phone Number">
                     </div>
                  
-                </p>
+               
 
-                <p>
+                   <div id="email">
                     <span>Your Email</span><br>
                     <input type="text" placeholder="Your Email">
-                </p>
+                   </div>
 
-                <p>
-                    <input type="checkbox" name="agree" id="agree" value="">
-                    <label for="agree">Agree with terms</label>
-                </p>
+                    <div id="agree">
+                        <input type="checkbox" name="agree" id="check" value="">
+                    <label for="check">Agree with <a href="#">termsgg gggggggg ggggg ggggg</a></label>
+                    </div>
 
-                <p>
+                <div id="button">
                     <button>Register</button>
-                </p>
+                </div>
 
             </div>
         </div>
+
+
+
+    
 
     </div>
     
